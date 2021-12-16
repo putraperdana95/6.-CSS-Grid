@@ -1,0 +1,46 @@
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(181, 244, 247);
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 3fr) repeat(4, 5fr);
+    grid-template-rows: 100px;
+}
+
+.container-dua {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px min-content 100px;
+}
+
+.container-tiga {
+    width: 60%;
+    border: 4px solid black;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.container-empat {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 300px) 1fr;
+}
+
+.item {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: cornsilk;
+}
